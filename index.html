@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type=text/css href="./styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>First city project</title>
+  </head>
+  <body>
+    <!-- <header> -->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fas fa-bars" id="hamburger"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJ0DPTtTg9K5TnCmSiET0aNr6pr_3XQw0Jg&usqp=CAU"
+        alt="first city"
+        class="logo_image"
+        width="100"
+        height="auto"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./main.html">Enquiry form</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Sign up</a></li>
+        <!-- <li><a class="btn-area" href="#">login</a></li>
+          <li><a class="btn-area" href="#">signup</a></li> -->
+      </ul>
+    </nav>
+    <!-- </header> -->
+    <main class="main">
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./images/pg1b.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./images/pg5b.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./images/First-City_1.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </main>
+    <footer>
+      <p class="footer_text">All rights reserved.</p>
+    </footer>
+  </body>
+</html>

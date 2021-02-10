@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  list-style: none;
+  text-decoration: none;
+}
+
+.title__text {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.submitButton {
+  padding: 10px;
+  font-size: medium;
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}

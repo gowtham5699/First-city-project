@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type=text/css href="main.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="/response.html">
+      <div class="title__text">
+        <h1>first city project, phase-1, mihan, nagpur</h1>
+        <p>"An Environment defined by Blue Sky and Green Earth"</p>
+        <h1>property enquiry form</h1>
+      </div>
+      <br />
+      <div class="a1">
+        <!-- LOGO -->
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJ0DPTtTg9K5TnCmSiET0aNr6pr_3XQw0Jg&usqp=CAU"
+          id="logo"
+          alt="first city"
+          width="120"
+          height="100"
+        />
+      </div>
+      
+      <div>
+        <label for=""><b>Ref.No.</b></label>
+        <input type="text" id="" />
+      </div>
+      <div>
+        <label for=""><b>date:</b></label>
+        <input type="date" id="" />
+      </div>
+      
+      <br />
+      <hr />
+      <br />
+      <!-- NAME -->
+      <div class="name__box">
+        <label for="name"><b>Name of the applicant:</b></label>
+        <label>1)</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="4"
+          size="15"
+        />
+        <label>2)</label>
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="address__box">
+        <label for="address"><b>Address:</b></label>
+        <input type="text" id="address" size="100" required />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="occupation">
+        <label for="occup"><b>Occupation:</b></label>
+        <input type="text" id="occup" />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""
+          ><b>Annual Income:</b>
+          <select name="income" id="income">
+            <option value="5-10lakhs">5-10 lakhs</option>
+            <option value="10-25lakhs">10-25 lakhs</option>
+            <option value="25-50lakhs">25-50 lakhs</option>
+            <option value="above50lakhs">Above 50 lakhs</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="contact_details">
+        <label for="cont"
+          ><b>Contact Details:</b>
+          <label for="num">Mob.No.</label>
+          <input type="number" id="num" />
+          <label for="Lnum">Land No.</label>
+          <input type="number" id="Lnum" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label
+          ><b>No. of Family Members:</b>
+          <label for="above18">Above 18</label>
+          <input type="number" id="above18" />
+          <label for="below18">Below 18</label>
+          <input type="number" id="below18" />
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="enquired_by">
+        <label
+          ><b>Property Enquired by:</b>
+          <select name="members" id="members">
+            <option value="self">Self</option>
+            <option value="agent">Agent</option>
+            <option value="actor">Acting on behalf of Purchaser</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label
+          ><b>How did you hear about "First City Project:"</b>
+          <select name="heard" id="heard">
+            <option value="Friends">Friends/Relatives</option>
+            <option value="agent">Agent</option>
+            <option value="visualmedia">Visual Media</option>
+            <option value="website">Website</option>
+            <option value="others">Others</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label
+          ><b>Type of Property Looking:</b>
+          <select name="typeofproject" id="typeofproject">
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label
+          ><b>Size of Unit Looking for:</b>
+          <select name="size" id="size">
+            <option value="below1000">Below 1000 sqft</option>
+            <option value="">1000-1500 sqft</option>
+            <option value="">1500-2000 sqft</option>
+            <option value="">Above 2000 sqft</option>
+            <option value=""></option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""
+          ><b>Purpose of Use:</b>
+          <select name="purpose" id="purpose">
+            <option value="">Own Use</option>
+            <option value="">Investment</option>
+            <option value="">Addl. Investment</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label
+          ><b>Budget:</b>
+          <select name="budget" id="budget">
+            <option value="below50lakh">Below 50 lakhs</option>
+            <option value="below50lakh">50-75 lakhs</option>
+            <option value="below50lakh">75L-1Cr</option>
+            <option value="below50lakh">Above 1Cr</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""
+          ><b>How soon are you looking:</b>
+          <select name="how_soon" id="how_soon">
+            <option value="now">Now</option>
+            <option value="next3months">Next 3 Months</option>
+            <option value="next3months">Next 6 Months</option>
+            <option value="notSure">Not Sure</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""
+          ><b>Do you require Bank Loan:</b>
+          <select name="loan" id="loan">
+            <option value="yes">yes</option>
+            <option value="no">No</option>
+            <option value="notsure">Not Sure</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""
+          ><b>Interested in:</b>
+          <select name="interests" id="interests">
+            <option value="1bhk">1 BHK</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="2.5bhk">2.5 BHK</option>
+            <option value="3bhk">3 BHK</option>
+            <option value="4bhk">4 BHK</option>
+            <option value="3bhkd">3 BHK Duplex</option>
+            <option value="4bhk">4 BHK Duplex</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label><b>Preferred Location/Floor:</b></label>
+        <input type="text" id="" />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""><b>Referrals, if any:</b> </label>
+        <input type="text" id="" />
+      </div>
+      <br />
+      <hr />
+      <div>
+        <p>
+          Please use Cost sheet for Price Structure & Payment Schedule,
+          separately.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for=""><b>Attended By:</b></label>
+        <input type="text" id="" />
+        <label for="">Date:</label>
+        <input type="date" id="" />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for=""><b>For Office Use:Remarks/Comments, if any</b></label>
+        <input type="text" id="" />
+      </div>
+      <br />
+      <hr />
+      <div>
+        <label
+          ><b
+            >Note: The Enquiry Form is not for issuance to customer(s)</b
+          ></label
+        >
+      </div>
+      <br />
+      <div>
+        <button type="submit" class="submitButton">submit</button>
+      </div>
+      <br />
+    </form>
+  </body>
+  <footer class="backtohome"><a href="index.html">HOME</a></footer>
+</html>
